@@ -15,6 +15,7 @@ const request = async () => {
     console.log(data.message);
     const breed = data.message.match(re);
     console.log(breed[1]);
+    document.getElementById("dogImage").src=data.message;
 
     // document.getElementById("guess").value = "Fifth Avenue, New York City"; 
     document.getElementById("check").addEventListener("click", checkBreed);
