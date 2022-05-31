@@ -7,3 +7,8 @@ Ideas
   * Enhancements
     * Choose which breeds to guess
     * Parallax to images
+
+do row by row checking
+dont show how many letters it is
+  give clues/hints on how many letters over/under
+  red tiles/ghost tiles
