@@ -1,0 +1,36 @@
+body {
+    font-family: 'class="testing"', 'Arial', sans-serif;
+}
+
+.game {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.tile {
+    display: inline-block;
+    border: 0.1rem solid black;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.correct {
+    background-color: rgb(138, 196, 52);
+}
+.incorrect-location {
+    background-color: rgb(197, 197, 9);
+}
+.incorrect {
+    background-color: gray;
+}
+.unknown {
+    color: black;
+    background-color: white;
+}

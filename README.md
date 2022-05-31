@@ -4,3 +4,6 @@ Ideas
 
 * Dog Wordle (Doggle)
   * Get a random picture of a dog. Try to guess the breed.
+  * Enhancements
+    * Choose which breeds to guess
+    * Parallax to images

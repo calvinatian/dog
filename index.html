@@ -2,12 +2,29 @@
 
 <head>
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="controls">
     <button id="reload" type="button">Reload</button>
   </div>
   
+  <!-- <div class="incorrect tile">
+    <div>T</div>
+  </div>
+  <div class="correct tile">
+    <div>T</div>
+  </div>
+  <div class="incorrect-location tile">
+    <div>T</div>
+  </div>
+  <div class="unknown tile">
+    <div>T</div>
+  </div> -->
+  <div id="game"></div>
+
+  <div id="answer">Answer not loaded</div>
+
   <div class="event-log">
     <label>Event log:</label>
     <textarea readonly class="event-log-contents" rows="8" cols="30"></textarea>
@@ -23,4 +40,10 @@
   </div>
 
   <button id="check">Check Guess</button>
+
+  <div>
+    <p>All Breeds</p>
+    <div id="all-breeds"></div>
+  </div>
+
 </body>
