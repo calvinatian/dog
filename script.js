@@ -161,17 +161,20 @@ document.addEventListener('keydown', (event) => {
 
 function keyPress(key, code) {
   const guess = document.getElementById("guess");
+  const game = document.getElementById("game");
   if (code == "Enter") {
     // try submitting guess
     console.log(guess.value)
-    const game = document.getElementById("game");
     res = checkBreed("", game, guess.value);
     if (res) {guess.value = ""};
-  } else if (code == "Backspace") {
-    guess.value = guess.value.slice(0, -1)
   } else {
-    guess.value += key.toUpperCase()
+    guess.value = (code == "Backspace") ? guess.value.slice(0, -1) : guess.value + key.toUpperCase()
     // value.toLowerCase();
+    // get row
+    const rowNum = 'game-row-' + game.numGuesses;
+    const row = document.getElementById(rowNum);
+    // replace row
+    row.innerHTML = generateTileRow(game.numGuesses, guess.value);
   }
 }
 
@@ -182,11 +185,16 @@ function checkBreed(event, game, guess) {
     document.getElementById("status").value = "Not enough letters!";
     return false
   }
+  const rowNum = 'game-row-' + game.numGuesses;
+  const row = document.getElementById(rowNum)
+  let newRow = ""
   for (let i in guess) {
     tile = generateTile(i, guess, answer);
-    game.innerHTML += tile;
+    // game.innerHTML += tile;
+    newRow += tile;
   }
-  game.innerHTML += '<div></div>'  // new row
+  row.innerHTML = newRow;
+  game.numGuesses += 1;
   if (guess == answer) {
     document.getElementById("status").value = "Success!";
   } else {
