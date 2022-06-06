@@ -1,4 +1,4 @@
-# Doggle
+# [Doggle](https://calvinatian.github.io/doggle/)
 
 Playing around with [Dog API](https://dog.ceo/dog-api/) for code swap event.
 
