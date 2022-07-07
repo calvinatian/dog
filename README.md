@@ -1,24 +1,24 @@
 # [Doggle](https://calvinatian.github.io/doggle/)
 
-Playing around with [Dog API](https://dog.ceo/dog-api/) for code swap event.
+Playing around with [Dog API](https://dog.ceo/dog-api/) for the code swap event.
 
 Guess the breed of the random dog image.
 
 ## How to play. 
 
-* Only guess main breed. (e.g Boston Terrier -> Terrier)
+* Only guess the main breed. (e.g Boston Terrier -> Terrier)
 * Just type directly on the page: don't select the text box.
-* Green - letter is in word and in correct position
-* Yellow - letter is in word but not in correct position (No duplicate handling yet. For example, if you type a word with two `e`'s and both are not in the correct position, both tiles will be yellow even though there is only one `e` in the answer)
+* Green - letter is in word and the correct position
+* Yellow - letter is in word but not in the correct position (No duplicate handling yet. For example, if you type a word with two `e`'s and both are not in the correct position, both tiles will be yellow even though there is only one `e` in the answer)
 * Gray - letter is not in the word
 
 ## Future improvements
 
-* Mobile version (virtaul keyboard or some other input method)
+* Mobile version (virtual keyboard or some other input method)
 * Choose which breeds to guess
-* Choose whether to guess full breed name or just the main breed name
+* Choose whether to guess the full breed name or just the main breed name
 * Option to not show how many letters are in the answer
-  * give clues/hints on how many letters over/under
+  * give clues/hints on how many letters are over/under
   * red tiles/ghost tiles
 
 ## Breeds:
